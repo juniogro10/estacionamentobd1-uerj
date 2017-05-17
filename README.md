@@ -3,12 +3,26 @@
 Trabalho realizado para a disciplina Banco de Dados 1 , ministrado pela a professora Ana Carolina , instituição Universidade Estadual do Rio de Janeiro - UERJ.
 Período Letivo 2016.2
 
-## Integrante
+# Hospedagem e Conexão
+
+### Acesso ao Banco de Dados ( PHPMyAdmin )
+
+* URL: https://db74.hostinger.com.br/
+* Usuário: u866020361_uerj
+* Senha: 2016.2
+
+### Acesso ao FTP
+
+* URL: ftp.rawinput.com.br
+* Usuário: u866020361.garagemuerj
+* Senha: 2016.2
+
+# Integrantes
  * Igor Lessa
  * Mauricio Vicente
  * Nilton
 
-## Ideia  
+# Ideia  
 Desenvolvimento de aplicação voltada para um estacionamento(Rotativo / Mensal), a aplicação devera  ter os seguintes modos operante:
 * Rotativo  
   * Entrada do Veículo
@@ -33,7 +47,7 @@ Desenvolvimento de aplicação voltada para um estacionamento(Rotativo / Mensal)
 
 
 
-## O trabalho deve conter:
+# O trabalho deve conter:
 * Minimundo: texto explicativo sobre o domínio, contendo o detalhamento da especificação dos
 requisitos e dados;  
 * Modelagem conceitual ER com diagrama ER - entidades, relacionamentos e cardinalidades
