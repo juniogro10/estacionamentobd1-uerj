@@ -1,5 +1,5 @@
 <?php
 
-$output = `git pull`
+$output = `git pull`;
 
-echo $output
+die($output);
