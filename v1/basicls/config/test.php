@@ -18,7 +18,13 @@ return [
             'basePath' => __DIR__ . '/../web/assets',
         ],
         'urlManager' => [
-            'showScriptName' => true,
+            'class' => 'yii\web\UrlManager',
+            'showScriptName' => false,
+            'enablePrettyUrl' => true,
+            'rules' => [
+                ['class' => 'common\components\PageUrlRule'],
+
+            ],
         ],
         'user' => [
             'identityClass' => 'app\models\User',
