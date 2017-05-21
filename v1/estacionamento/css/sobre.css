@@ -1,0 +1,39 @@
+/**
+ * Created by PhpStorm.
+ * User: Deborah F. Lira Vancelotte
+ */
+
+#sobre{
+    background-color:##fcf6f6;
+}
+
+#sobre h2{
+    font-family: Nexa;
+    color: rgba(44, 62, 80,1.0);
+    font-size: 50px;
+}
+
+#sobre hr{
+    border-color: #C6FF00;
+    border-width: 2px;
+    max-width: 100px;
+    padding-bottom: 40px;
+}
+
+#sobre .img-responsive{
+    width: 20%;
+    height: 20%;
+    margin-left: auto;
+	margin-right: auto;
+	display: block
+}
+
+#sobre h3{
+    font-family: Nexa;
+    color: #1A535C;
+    font-size: 20px;
+}
+
+#sobre p{
+    color: #636150 !important;
+}

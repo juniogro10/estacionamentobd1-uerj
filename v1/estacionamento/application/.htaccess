@@ -1,0 +1,23 @@
+RewriteEngine on
+#
+#
+##RewriteCond %{REQUEST_FILENAME} !-f
+##RewriteCond %{REQUEST_FILENAME} !-d
+#
+##RewriteCond $1 !^(index\.php|imagens|js|css|robots\.txt)
+#RewriteRule ^(.*)$ frontend/web/$1 [L]
+#
+#
+#
+#
+
+#RewriteCond %{REQUEST_URI} ^.*$
+#RewriteRule ^(.*)$ frontend/web/$1 [QSA,L,E=PATH_INFO:frontend/web/$1]
+
+
+
+RewriteCond %{REQUEST_URI} !^public
+RewriteRule ^(.*)$ frontend/web/$1 [L] 
+
+
+

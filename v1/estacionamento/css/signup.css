@@ -1,0 +1,31 @@
+.signup{
+    background: #39a9b9;
+}
+
+.site-signup{
+    margin-left: 35%;
+    margin-top: 10%;
+}
+
+h1{
+     font-family:  MODERNE_SANS !important;
+     color: white;
+     margin-bottom: 5%;
+}
+
+.signup label{
+    color: white;   
+}
+
+.btn-signup{
+     background-color: #7e0059;
+     border-radius: 10px;
+     border: 1px solid #7e0059; 
+     margin-top: 10%;
+     width: 100%; 
+}
+
+.btn-signup:hover{
+    background-color: #C6FF00;
+    border: solid #C6FF00;
+}

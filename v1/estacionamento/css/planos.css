@@ -1,0 +1,91 @@
+/**
+ * Created by PhpStorm.
+ * User: Deborah F. Lira Vancelotte
+ */
+
+#planos{
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/header.jpg');
+  text-align: center;
+  color: white;
+  background-image: url('../img/planos.jpg');
+  
+}
+
+#planos #conjPlanos{
+}
+
+#planos h2{
+    font-family: Nexa;
+    color: white;
+    font-size: 50px;
+}
+
+#planos hr{
+    border-color: #C6FF00;
+    border-width: 2px;
+    max-width: 100px;
+}
+
+#planos .plan-title{
+    color: aliceblue;
+
+}
+
+#planos .inner-box{
+    background-color: #578BAF;
+    padding: 0px 0px 0px;
+}
+
+#planos .inner-box:hover{
+    background-color: #00bedd;
+    padding: 0px 0px 0px;
+}
+
+
+
+#planos .plan-header{
+    padding: 30px 0px 0px;
+}
+
+
+.price{
+    background-color: transparent;
+}
+
+.duration{
+   background-color: rgba(236, 240, 241,1.0); 
+}
+
+.description{
+    background-color: white;
+    padding: 0px 0px 0px 0px;
+}
+
+#planos li{
+    color: black;
+}
+
+#planos .btn{
+    width: 100%;
+    height: 100%;
+    border-width: 0px !important;   
+    background: transparent !important;
+    border-radius: 0px !important;
+}
+#planos .btn:hover{
+    background: white!important;
+}
+
+#planos .assine{
+    padding: 0px 0px 0px 0px;
+}
+
+

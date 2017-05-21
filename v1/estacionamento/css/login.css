@@ -1,0 +1,151 @@
+
+/* Login Box */
+#loginBox {
+    position:absolute;
+    top:34px;
+    right:0;
+    display:none;
+    z-index:29;
+}
+
+
+/* Login Form */
+#loginForm {
+    width:248px; 
+    margin-top:-1px;
+    background:transparent;
+    padding:6px;
+
+}
+
+
+fieldset#body {
+    background:transparent;
+    margin:0;
+}
+
+#loginForm #checkbox {
+    width:auto;
+    margin:1px 9px 0 0;
+    float:left;
+    padding:0;
+    border:0;
+    *margin:-3px 9px 0 0; /* IE7 Fix */
+}
+
+/* Default Input */
+#loginForm input, #login-page input { 
+    
+    border: 0.2px solid rgba(52, 73, 94,0.50); 
+    -webkit-border: 0.2px solid rgba(52, 73, 94,0.50);
+    -moz-border: 0.2px solid rgba(52, 73, 94,0.50);
+    -o-border: 0.2px solid rgba(52, 73, 94,0.50);
+    -ms-border: 0.2px solid rgba(52, 73, 94,0.50); 
+ 
+    border-radius: 3px;
+    box-shadow: 0 1px 1px #ccc inset;
+    background: rgba(236, 240, 241,0.7);
+    -webkit-background: rgba(236, 240, 241,0.7);
+    -moz-background: rgba(236, 240, 241,0.7);
+    -o-background: rgba(236, 240, 241,0.7);
+    -ms-background: rgba(236, 240, 241,0.7);
+    text-align: center;
+}
+
+#loginForm input:not([type=checkbox]){
+  padding: 6px 5px;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+
+.btn-login{
+     background-color: #7e0059;
+     border-radius: 10px;
+     border: 1px solid #7e0059; 
+}
+
+.btn-login:hover{
+    
+    background-color: rgba(26, 188, 156,0.7);
+    -webkit-background-color: rgba(26, 188, 156,0.7);
+    -moz-background-color: rgba(26, 188, 156,0.7);
+    -o-background-color: rgba(26, 188, 156,0.7);
+    -ms-background-color: rgba(26, 188, 156,0.7);
+    
+    border: solid rgba(26, 188, 156,0.9);
+    -webkit-border: solid rgba(26, 188, 156,0.9);
+    -moz-border: solid rgba(26, 188, 156,0.9);
+    -o-border: solid rgba(26, 188, 156,0.9);
+    -ms-border: solid rgba(26, 188, 156,0.9);
+}
+
+.btn-loginBox{
+     width: 100% !important;
+     margin-left: 5%;
+}
+
+
+#loginForm label{
+     margin-left: 10px;
+    color: white;
+}
+ 
+
+/* Forgot your password */
+#loginForm span {
+    text-align:center;
+    display:block;
+    margin-left: 25px;
+}
+
+#loginForm span a {
+    color:whitesmoke;
+    font-size:15px;
+}
+
+
+#login-page {
+  background-image: url('../img/header_login.jpg');
+}
+
+#login-page input:not([type=checkbox]){
+    width: 60%;
+    margin-left: 20%;
+
+}
+
+.btn-login{
+    width: 60%;
+}
+
+#pageloginForm{
+    
+    background: rgba(108,90,121,0.5);        
+    -webkit-background-color: rgba(108,90,121,0.5);
+    -moz-background-color: rgba(108,90,121,0.5);
+    -o-background-color: rgba(108,90,121,0.5);
+    -ms-background-color: rgba(108,90,121,0.5); 
+    
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);     
+    -webkit-box-shadow: rgba(108,90,121,0.5);
+    -moz-box-shadow: rgba(108,90,121,0.5);
+    -o-box-shadow: rgba(108,90,121,0.5);
+    -ms-box-shadow: rgba(108,90,121,0.5);
+    
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    width: 40%;
+    margin-left: 32%;
+    padding: 2% 2% 2% 2%;
+}
+
+
+a{
+    color: #ECF0F1;
+}
+
+#loginBox a{
+    text-align: center;
+    
+}

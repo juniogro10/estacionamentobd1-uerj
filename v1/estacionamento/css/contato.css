@@ -1,0 +1,78 @@
+/**
+ * Created by PhpStorm.
+ * User: Deborah F. Lira Vancelotte
+ */
+
+#contato{
+    background-color:#f6f6f6;
+}
+
+#contato h2{
+    font-family: Nexa;
+    color: rgba(44, 62, 80,1.0);
+    font-size: 50px;
+}
+
+
+#contato hr{
+    border-color: #C6FF00;
+    border-width: 2px;
+    max-width: 100px;
+    padding-bottom: 40px;
+}
+
+#contato .img-responsive{
+    width: 30%;
+    height: 20%;
+    margin-left: auto;
+	margin-right: auto;
+	display: block
+}
+
+#contato h3{
+    font-family: Nexa;
+    color: #1A535C;
+    font-size: 20px;
+     margin-bottom: 50px;
+   
+}
+
+#contato .texto-contato{
+    color: #636150 !important;
+    padding-top: 30px;
+}
+
+#contato input {  
+  box-shadow: 0 1px 1px #ccc inset;
+  background: white;
+  text-align: left;
+}
+
+#contato label{
+    text-align:left;
+    float:left;
+}
+
+#contact-button{
+     width: 100%;
+     background-color: #7e0059;
+     border-radius: 10px;
+     border: 1px solid #7e0059; 
+}
+
+#contact-button:hover{
+    background-color: rgba(26, 188, 156,0.7);
+    border: solid rgba(26, 188, 156,0.9);
+}
+
+#contato .has-error .help-block, .has-error .control-label{
+    color: #e74c3c;
+}
+
+#contato .has-error .form-control{
+    border-color: #e74c3c;
+}
+
+#contato .has-success .form-control{
+    color:#2c3e50;
+}

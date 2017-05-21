@@ -1,0 +1,189 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+h1{
+    font-family: MODERNE_SANS !important;
+    font-size: 50px !important;
+}
+
+p{
+  color: #ececec ;
+}
+
+
+header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/header.jpg');
+  text-align: center;
+  color: white;
+}
+header .header-content {
+  position: relative;
+  text-align: center;
+  padding: 100px 15px 100px;
+  width: 100%;
+}
+header .header-content .header-content-inner h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+header .header-content .header-content-inner hr {
+  margin: 30px auto;
+}
+header .header-content .header-content-inner p {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  margin-bottom: 50px;
+  color: #ececec !important;
+}
+
+
+header a[href="#registrar"]{
+   /* background-color: #53607a;  */
+    background-color: #7e0059;
+    border: solid #7e0059;
+    border-width: 2px;  
+    border-radius: 100px;
+    font-family: Nexa;
+}
+header a[href="#registrar"]:hover{
+   /* background-color: #53607a;  */
+    background-color: rgba(26, 188, 156,0.7);
+    border: solid rgba(26, 188, 156,0.9);
+}
+
+header a[href="#about"]{
+    border-style: solid;
+    border: solid #7e0059;
+    border-width: 2px;   
+    background: transparent;
+    border-radius: 100px;
+    font-family: Nexa;
+}
+
+header a[href="#about"]:hover{
+    background-color:rgba(26, 188, 156,0.5);
+    border-style: solid;
+    border: solid rgba(26, 188, 156,0.7);
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  align-items: center;
+}
+
+header hr {
+  border-color: #7e0059;
+  border-width: 2px;
+  max-width: 50px;
+}
+hr.light {
+  border-color: white;
+}
+
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+
+
+
