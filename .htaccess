@@ -1,0 +1,12 @@
+RewriteEngine on
+RewriteBase /v1/estacionamento/
+
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+
+# RewriteRule ^ index.php [QSA,L]
+
+# RewriteRule . index.php 
+
+# RewriteCond %{REQUEST_URI} /(.*)/$
+# RewriteRule ^ /%1 [R=301,L]
