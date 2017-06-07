@@ -5,14 +5,7 @@ return [
     'language' => 'pt_BR',
     'timeZone' => 'America/Sao_Paulo',
     'components' => [
-        'session' => [
-            'class' => 'yii\web\DbSession',
-            // Set the following if you want to use DB component other than
-            // default 'db'.
-//             'db' => 'dwn',
-            // To override default session table, set the following
-            // 'sessionTable' => 'my_session',
-        ],
+
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
@@ -22,10 +15,6 @@ return [
             'enablePrettyUrl' => true,
             'rules' => [
                 ['class' => 'common\components\PageUrlRule'],
-
-                'app/obterdados' => 'app/default/obterdados',
-                'app/dataset/<dataset_id:\d+>' => 'app/default/dataset',
-                'app/<action:\w+>' => 'app/default/<action>',
             ],
         ],
         'log' => [

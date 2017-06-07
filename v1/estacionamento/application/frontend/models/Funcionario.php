@@ -34,7 +34,7 @@ class Funcionario extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-//            [['cpf_funcionario', 'senha', 'nome', 'rg', 'sexo', 'dt_nascimento', 'telefone', 'tipo'], 'required'],
+            [['cpf_funcionario', 'senha', 'nome', 'rg', 'sexo', 'dt_nascimento', 'telefone', 'tipo'], 'required'],
             [['cpf_funcionario', 'rg', 'tipo'], 'integer'],
             [['senha', 'nome', 'telefone'], 'string'],
             [['dt_nascimento'], 'safe'],

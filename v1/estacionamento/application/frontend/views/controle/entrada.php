@@ -3,6 +3,8 @@
 use yii\bootstrap\ActiveForm;
 use yii\helpers\Html;
 
+//var_dump($model);
+//exit;
 ?>
 <h1>controle/entrada</h1>
 
