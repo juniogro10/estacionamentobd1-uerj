@@ -16,7 +16,7 @@ use yii\web\UrlRule;
 class Database extends Component
 {
 //    Consulta somente
-    public function query_all($query)
+    public static function query_all($query)
     {
         $connection = Yii::$app->getDb();
         $command = $connection->createCommand($query);
@@ -25,7 +25,7 @@ class Database extends Component
     }
 
 //  Usada para insert ou update
-    public function query_execute($query)
+    public static function query_execute($query)
     {
         $connection = Yii::$app->getDb();
         $command = $connection->createCommand($query);
