@@ -18,9 +18,8 @@ use yii\bootstrap\Html;
         <?= Html::a('Saída', ['controle/saida'], ['class' => 'btn btn-warning', 'style' => 'padding:50px;']); ?>
     </div>
     <div style="margin-top: 10px">
-        <?= Html::a('Mensal', ['controle/mensal'], ['class' => 'btn btn-success', 'style' => 'padding:50px;']); ?>
+        <?= Html::a('Mensal', ['mensal/index'], ['class' => 'btn btn-success', 'style' => 'padding:50px;']); ?>
     </div>
-</div>
 </div>
 
 

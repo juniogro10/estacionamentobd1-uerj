@@ -30,6 +30,7 @@ class Database extends Component
         $connection = Yii::$app->getDb();
         $command = $connection->createCommand($query);
 
+
         $result = $command->execute();
         return $result;
     }

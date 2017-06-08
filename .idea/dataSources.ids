@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - u866020361_uerj@localhost" uuid="d7af9946-2d55-4157-a610-4e9d9565b167">
+    <database-info product="MySQL" version="5.5.5-10.1.10-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.2">
+      <schema id="1" name="u866020361_uerj"/>
+      <table id="2" parent="1" name="cliente"/>
+      <table id="3" parent="1" name="funcionario"/>
+      <table id="4" parent="1" name="pagamento_cliente"/>
+      <table id="5" parent="1" name="ticket_rotativo"/>
+      <table id="6" parent="1" name="veiculo_cliente"/>
+      <column id="7" parent="2" name="cpf_cliente">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="8" parent="2" name="nome">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="9" parent="2" name="rg">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="10" parent="2" name="sexo">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="11" parent="2" name="email">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="12" parent="2" name="dt_nascimento">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <column id="13" parent="2" name="telefone">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="14" parent="2" name="ativo">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <key id="15" parent="2" name="PRIMARY">
+        <columns>cpf_cliente</columns>
+        <primary>1</primary>
+      </key>
+      <column id="16" parent="3" name="cpf_funcionario">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="17" parent="3" name="senha">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="18" parent="3" name="nome">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="19" parent="3" name="rg">
+        <mandatory>1</mandatory>
+        <data-type>int(20)</data-type>
+      </column>
+      <column id="20" parent="3" name="sexo">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="21" parent="3" name="dt_nascimento">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <column id="22" parent="3" name="telefone">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="23" parent="3" name="tipo">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="24" parent="3" name="PRIMARY">
+        <columns>cpf_funcionario</columns>
+        <primary>1</primary>
+      </key>
+      <column id="25" parent="4" name="id_pagamento">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="26" parent="4" name="cpf_cliente">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="27" parent="4" name="valor_pago">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="28" parent="4" name="data_hora_pagamento">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <key id="29" parent="4" name="PRIMARY">
+        <columns>id_pagamento</columns>
+        <primary>1</primary>
+      </key>
+      <column id="30" parent="5" name="id_ticket_rotativo">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="31" parent="5" name="cpf_funcionario">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="32" parent="5" name="placa">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="33" parent="5" name="data_hora_entrada">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="34" parent="5" name="data_hora_saida">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="35" parent="5" name="valor_pago">
+        <data-type>float</data-type>
+      </column>
+      <key id="36" parent="5" name="PRIMARY">
+        <columns>id_ticket_rotativo</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="37" parent="5" name="fk_cpf">
+        <columns>cpf_funcionario</columns>
+        <ref-key>funcionario.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="38" parent="6" name="id_veiculo_cliente">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="39" parent="6" name="cpf_cliente">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="40" parent="6" name="placa">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="41" parent="6" name="modelo">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <key id="42" parent="6" name="PRIMARY">
+        <columns>id_veiculo_cliente</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="43" parent="6" name="FK">
+        <columns>cpf_cliente</columns>
+        <ref-key>cliente.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+    </database-model>
+  </data-source>
+</component>
