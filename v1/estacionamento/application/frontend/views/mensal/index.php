@@ -7,7 +7,7 @@ use yii\helpers\Html;
     <h1> Cliente</h1>
     <div style="margin-top: 20px">
 
-        <?= Html::a('Consultar', ['mensal/consultar'], ['class' => 'btn btn-xl btn-info', 'style' => 'padding:50px;']); ?>
+        <?= Html::a('Listar', ['mensal/lista'], ['class' => 'btn btn-xl btn-info', 'style' => 'padding:50px;']); ?>
 
         <?= Html::a('Cadastrar', ['mensal/cadastrar'], ['class' => 'btn btn-warning', 'style' => 'padding:50px;']); ?>
 

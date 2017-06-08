@@ -27,11 +27,22 @@ class Database extends Component
 //  Usada para insert ou update
     public static function query_execute($query)
     {
+
+
         $connection = Yii::$app->getDb();
+
         $command = $connection->createCommand($query);
 
+        try{
+            $result = $command->execute();
+            return $result;
 
-        $result = $command->execute();
-        return $result;
+        }catch (\Exception $e)
+        {
+            throw new \Exception($e->getMessage());
+//            exit;
+            return false;
+        }
+
     }
 }

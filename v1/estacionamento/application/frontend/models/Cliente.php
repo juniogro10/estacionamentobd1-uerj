@@ -47,10 +47,10 @@ class Cliente extends Model
     public function rules()
     {
         return [
-            [['cpf_cliente', 'nome', 'rg', 'telefone','dt_nascimento','sexo','email'], 'required'],
-            [[ 'rg', 'sexo', 'ativo'], 'integer'],
+            [['cpf_cliente', 'nome', 'rg', 'telefone', 'dt_nascimento', 'sexo', 'email'], 'required'],
+            [['rg', 'sexo', 'ativo'], 'integer'],
 
-            [['cpf_cliente','email', 'telefone', 'nome'], 'string'],
+            [['cpf_cliente', 'email', 'telefone', 'nome'], 'string'],
             [['cpf_cliente'], CpfValidator::className()],
             [['dt_nascimento'], 'safe'],
             [['email'], 'email'],
@@ -75,24 +75,93 @@ class Cliente extends Model
     }
 
 
+    public static function findall($status = 1)
+    {
+        try {
+            $query = "SELECT * FROM " . Cliente::tableName() . " WHERE ativo ='" . $status . "';";
+
+            $query_result = Database::query_all($query);
+
+            if ($query_result) {
+
+
+                return $query_result;
+                $model = new Cliente();
+                try {
+
+                    foreach ($query_result as $item) {
+                        $model->load(['Cliente' => [ $item]]);
+
+                        var_dump($model);
+                    }
+                    var_dump($query_result);
+                    exit;
+//                    $model->load(['Cliente' => $query_result[0]]);;
+//
+//                    return $model;
+
+                } catch (\Exception $e) {
+
+                    var_dump("deu ruim");
+                    var_dump($e->getMessage());
+                    exit;
+                }
+            } else {
+                return false;
+            }
+
+        } catch (Exception $e) {
+            throw new \Exception($e);
+        }
+    }
+
+    public static function findcliente($cpf)
+    {
+
+        try {
+            $query = "SELECT * FROM " . Cliente::tableName() . " WHERE cpf_cliente ='" . $cpf . "';";
+
+            $query_result = Database::query_all($query);
+
+            if ($query_result) {
+
+                $model = new Cliente();
+                try {
+                    $model->load(['Cliente' => $query_result[0]]);;
+
+                    return $model;
+
+                } catch (\Exception $e) {
+
+                    var_dump("deu ruim");
+                    var_dump($e->getMessage());
+                    exit;
+                }
+            } else {
+                return false;
+            }
+
+        } catch (Exception $e) {
+            throw new \Exception($e);
+        }
+    }
+
+
     public function cadastrar()
     {
 //        var_dump($this->getSexo());
 //        exit;
 
         try {
-            $query = "INSERT INTO " . Cliente::tableName() . " (cpf_cliente,nome,rg,sexo,email,dt_nascimento,telefone,ativo)
-             VALUES ('" . $this->getCpfCliente() . "','" . $this->getNome() . "','" . $this->getRg() . "','" . $this->getSexo() . "','" . $this->getEmail() . "','" . $this->getDtNascimento_sql() ."','"  . $this->replace($this->getTelefone(),'_') . "','1')";
-
-            var_dump($query);
-            exit;
+            $query = "INSERT  " . Cliente::tableName() . " (cpf_cliente,nome,rg,sexo,email,dt_nascimento,telefone,ativo)
+             VALUES ('" . $this->getCpfCliente() . "','" . $this->getNome() . "','" . $this->getRg() . "','" . $this->getSexo() . "','" . $this->getEmail() . "','" . $this->getDtNascimento_sql() . "','" . $this->replace($this->getTelefone(),
+                    '_') . "','1')";
 
             $query_result = Database::query_execute($query);
 
-
             if ($query_result) {
-                Yii::$app->session->setFlash('success', 'Entrada Registrada com sucesso');
-                return;
+                Yii::$app->session->setFlash('success', 'Cadastro realizado com sucesso');
+                return true;
             }
             Yii::$app->session->setFlash('warning', 'Tente Novamente');
             throw new \Exception('query_result retornando errado');
@@ -102,11 +171,12 @@ class Cliente extends Model
     }
 
 
-    private function replace($palavra,$de,$por = '')
+    private function replace($palavra, $de, $por = '')
     {
 
-        return str_replace($de,$por,$palavra);
+        return str_replace($de, $por, $palavra);
     }
+
     /**
      * @return int
      */
@@ -205,12 +275,12 @@ class Cliente extends Model
 
     public function getDtNascimento_sql()
     {
-        return self::format_date_sql($this->getDtNascimento());
+        return $this->format_date_sql($this->getDtNascimento());
     }
 
     public function getDtNascimento_brl()
     {
-        return self::format_date_brl($this->getDtNascimento());
+        return $this->format_date_brl($this->getDtNascimento());
     }
 
     /**
@@ -252,6 +322,7 @@ class Cliente extends Model
         $mydate = date('Y-m-d', $timestamp);
         return $mydate;
     }
+
     private function format_date_brl($date)
     {
         $timestamp = strtotime($date);
