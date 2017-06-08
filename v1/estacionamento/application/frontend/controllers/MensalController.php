@@ -4,6 +4,7 @@ namespace frontend\controllers;
 
 use frontend\models\Cliente;
 use Yii;
+use yii\base\DynamicModel;
 use yii\data\ArrayDataProvider;
 
 class MensalController extends \yii\web\Controller
@@ -13,24 +14,20 @@ class MensalController extends \yii\web\Controller
 
         $model = new Cliente();
 
-        if($model->load(\Yii::$app->request->post()))
-        {
+        if ($model->load(\Yii::$app->request->post())) {
 //            Carregando load
 
-            try{
-                if($model->cadastrar())
-                {
-                    return $this->redirect(['mensal/cliente' , 'cpf' => $model->getCpfCliente()]);
+            try {
+                if ($model->cadastrar()) {
+                    return $this->redirect(['mensal/cliente', 'cpf' => $model->getCpfCliente()]);
                 }
-            }
-            catch(\Exception $e)
-            {
+            } catch (\Exception $e) {
                 var_dump($e->getMessage());
 
             }
             exit();
         }
-        return $this->render('cadastrar',['model' => $model]);
+        return $this->render('/cliente/cadastrar', ['model' => $model]);
     }
 
     public function actionIndex()
@@ -43,32 +40,26 @@ class MensalController extends \yii\web\Controller
 
         $model = Cliente::findcliente($cpf);
 
-        if($model)
-        {
+        if ($model) {
 //            if(Yii::$app->request->post())
 //            {
 //                var_dump('Post chegando');
 //            }
 
-            return $this->render('cliente',['model'=> $model]);
+            return $this->render('cliente', ['model' => $model]);
         }
         Yii::$app->session->setFlash('warning', 'CPF não localizado');
         return $this->redirect(['mensal/index']);
-
-
-        var_dump($cpf);
-        exit;
     }
 
     public function actionLista()
     {
 
+
+//      Procura no banco todos os clientes retornando um array
         $model = Cliente::findall();
 
-
-//        var_dump($model);
-//        exit;
-
+//      Criação do provider para uso no grid view
         $provider = new ArrayDataProvider([
             'allModels' => $model,
             'sort' => [
@@ -78,7 +69,77 @@ class MensalController extends \yii\web\Controller
                 'pageSize' => 10,
             ],
         ]);
-        return $this->render('lista',['dataProvider'=> $provider]);
+        return $this->render('cliente/lista', ['dataProvider' => $provider]);
+    }
 
+    public function actionClienteDelete($cpf)
+    {
+        $model = Cliente::findcliente($cpf);
+
+        $model->setAtivo(Cliente::DESATIVADO);
+
+        try {
+            $model->atualizar();
+            return $this->redirect(['mensal/cliente', 'cpf' => $model->getCpfCliente()]);
+        } catch (\Exception $e) {
+            var_dump($e->getMessage());
+
+            Yii::$app->session->setFlash('error', $e->getMessage());
+
+            return $this->goBack();
+        }
+    }
+
+    public function actionClienteBuscar()
+    {
+
+        $model_dynamic = new \yii\base\DynamicModel([
+            'cpf',
+            'nome'
+        ]);
+
+        $post = Yii::$app->request->post();
+        if ($post) {
+
+            $post = $post['DynamicModel'];
+
+//            var_dump(Yii::$app->request->ge)
+
+            if(!empty($post['cpf']))
+            {
+                $model = Cliente::buscartodosclienteporcpf($post['cpf']);
+            }
+            else
+            {
+                $model = Cliente::buscartodosclientepornome($post['nome']);
+            }
+
+//      Encontrou pelo menos 1 elemento
+            if ($model) {
+                //      Criação do provider para uso no grid view
+                $provider = new ArrayDataProvider([
+                    'allModels' => $model,
+//                    'sort' => [
+//                        'attributes' => ['cpf_cliente', 'nome'],
+//                    ],
+                    'pagination' => [
+                        'pageSize' => 10,
+                    ],
+                ]);
+                return $this->render('cliente/buscar',[ 'dataprovider' => $provider, 'model_dynamic' => $model_dynamic]);
+            }
+
+
+            Yii::$app->session->setFlash('warning', 'Nenhum cliente localizado com os dados informado');
+        }
+
+
+        return $this->render('cliente/buscar', ['model_dynamic' => $model_dynamic]);
+    }
+
+    public function actionAdicionarVeiculo($cpf)
+    {
+        var_dump($cpf);
+        exit;
     }
 }

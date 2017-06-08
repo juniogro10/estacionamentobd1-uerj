@@ -39,8 +39,8 @@ class Database extends Component
 
         }catch (\Exception $e)
         {
+            var_dump('erro na query execute');
             throw new \Exception($e->getMessage());
-//            exit;
             return false;
         }
 

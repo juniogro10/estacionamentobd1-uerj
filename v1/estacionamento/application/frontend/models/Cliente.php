@@ -24,6 +24,9 @@ use yiibr\brvalidator\CpfValidator;
  */
 class Cliente extends Model
 {
+
+    const ATIVO = 1;
+    const DESATIVADO = 0;
     public $nome;
     public $rg;
     public $cpf_cliente;
@@ -83,29 +86,7 @@ class Cliente extends Model
             $query_result = Database::query_all($query);
 
             if ($query_result) {
-
-
                 return $query_result;
-                $model = new Cliente();
-                try {
-
-                    foreach ($query_result as $item) {
-                        $model->load(['Cliente' => [ $item]]);
-
-                        var_dump($model);
-                    }
-                    var_dump($query_result);
-                    exit;
-//                    $model->load(['Cliente' => $query_result[0]]);;
-//
-//                    return $model;
-
-                } catch (\Exception $e) {
-
-                    var_dump("deu ruim");
-                    var_dump($e->getMessage());
-                    exit;
-                }
             } else {
                 return false;
             }
@@ -146,6 +127,45 @@ class Cliente extends Model
         }
     }
 
+    public static function buscartodosclienteporcpf($cpf)
+    {
+
+        try {
+            $query = "SELECT * FROM " . Cliente::tableName() . " WHERE cpf_cliente like '" . $cpf . "%' ORDER BY cpf_cliente DESC;";
+
+            $query_result = Database::query_all($query);
+
+            if ($query_result) {
+                return $query_result;
+            } else {
+                return false;
+            }
+
+        } catch (Exception $e) {
+            throw new \Exception($e);
+        }
+    }
+
+    public static function buscartodosclientepornome($nome)
+    {
+
+        try {
+            $query = "SELECT * FROM " . Cliente::tableName() . " WHERE nome like '" . $nome . "%' ORDER BY cpf_cliente DESC;";
+
+            $query_result = Database::query_all($query);
+
+            if ($query_result) {
+                return $query_result;
+            } else {
+                return false;
+            }
+
+        } catch (Exception $e) {
+            throw new \Exception($e);
+        }
+    }
+
+
 
     public function cadastrar()
     {
@@ -166,6 +186,28 @@ class Cliente extends Model
             Yii::$app->session->setFlash('warning', 'Tente Novamente');
             throw new \Exception('query_result retornando errado');
         } catch (Exception $e) {
+            throw new \Exception($e);
+        }
+    }
+
+    public function atualizar()
+    {
+//        return true;
+
+        try {
+            $query = "UPDATE " . Cliente::tableName() .
+                " SET ativo ='" . $this->getAtivo() . "', nome = '" . $this->getNome() .
+                "', rg = '" . $this->getRg() . "', sexo = '" . $this->getSexo() .
+                "', email = '" . $this->getEmail() . "', dt_nascimento = '" . $this->getDtNascimento_sql() .
+                "', telefone = '" . $this->getTelefone() . "'   WHERE cpf_cliente ='" . $this->getCpfCliente() . "';";
+
+            //Numero de row atualizada
+            $query_result = Database::query_execute($query);
+
+            Yii::$app->session->setFlash('success', 'Cliente Atualizado');
+            return true;
+        } catch (Exception $e) {
+            var_dump('erro no try');
             throw new \Exception($e);
         }
     }
