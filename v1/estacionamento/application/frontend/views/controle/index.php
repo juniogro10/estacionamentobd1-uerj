@@ -12,14 +12,15 @@ use yii\bootstrap\Html;
 ?>
 
 <div style=" width: 50%;margin: 0 auto; ">
-    <div style="">
-        <?= Html::a('Entrada', ['controle/entrada'], ['class' => 'btn btn-xl btn-info']); ?>
-        <?= Html::a('Saída', ['controle/saida'], ['class' => 'btn btn-warning']); ?>
+    <div style="margin-top: 20px">
+        <?= Html::a('Entrada', ['controle/entrada'], ['class' => 'btn btn-xl btn-info', 'style' => 'padding:50px;']); ?>
 
+        <?= Html::a('Saída', ['controle/saida'], ['class' => 'btn btn-warning', 'style' => 'padding:50px;']); ?>
     </div>
-    <div>
-        <?= Html::a('Mensal', ['controle/mensal'], ['class' => 'btn btn-success']); ?>
+    <div style="margin-top: 10px">
+        <?= Html::a('Mensal', ['controle/mensal'], ['class' => 'btn btn-success', 'style' => 'padding:50px;']); ?>
     </div>
+</div>
 </div>
 
 

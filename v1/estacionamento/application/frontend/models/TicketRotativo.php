@@ -145,7 +145,7 @@ class TicketRotativo extends Model
     public function entrada()
     {
         try {
-            $query = "INSERT INTO " . TicketRotativo::tableName() . " (cpf_funcionario,placa) VALUES ('" . \Yii::$app->user->getId() . "',' " . $this->placa . "')";
+            $query = "INSERT INTO " . TicketRotativo::tableName() . " (cpf_funcionario,placa) VALUES ('" . \Yii::$app->user->getId() . "','" . $this->placa . "')";
             $query_result = Database::query_execute($query);
 
             if ($query_result) {

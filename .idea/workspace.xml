@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="685c4497-81df-46ed-9f08-a13d09ddb90d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/v1/estacionamento/application/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/v1/estacionamento/application/common/config/dw_base.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/v1/estacionamento/application/common/config/monetdb.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/v1/estacionamento/application/common/config/readme_pagseguro.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/estacionamentobd1-uerj.iml" afterPath="$PROJECT_DIR$/.idea/estacionamentobd1-uerj.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/common/components/Database.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/common/components/Database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/common/config/main-local.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/common/config/main-local.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/common/config/main.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/common/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/ControleController.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/ControleController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/SiteController.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Funcionario.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Funcionario.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/TicketRotativo.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/TicketRotativo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/controle/entrada.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/controle/entrada.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/controle/saida.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/controle/saida.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/index.php" afterPath="$PROJECT_DIR$/v1/estacionamento/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/controle/index.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/controle/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/css/default.css" afterPath="$PROJECT_DIR$/v1/estacionamento/css/default.css" />
     </list>
     <ignored path="estacionamentobd1-uerj.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,22 +27,46 @@
     <favorites_list name="estacionamentobd1-uerj" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/SiteController.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ControleController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/ControleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537">
-              <caret line="65" column="30" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="30" />
+            <state vertical-scroll-proportion="-32.153847">
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ControleController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/ControleController.php">
+      <file leaf-file-name="main-local.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/common/config/main-local.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50595236">
-              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+            <state vertical-scroll-proportion="-11.769231">
+              <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/views/controle/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.25325885">
+              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1496889014361" expanded="false" signature="512:528" placeholder="..." />
+                <marker date="1496889014361" expanded="true" signature="529:550" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v1/estacionamento/css/default.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6153846">
+              <caret line="171" column="0" selection-start-line="171" selection-start-column="2" selection-end-line="229" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -63,29 +75,17 @@
       <file leaf-file-name="TicketRotativo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/models/TicketRotativo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.038462">
-              <caret line="184" column="5" selection-start-line="184" selection-start-column="5" selection-end-line="184" selection-end-column="5" />
+            <state vertical-scroll-proportion="-33.384617">
+              <caret line="147" column="146" selection-start-line="147" selection-start-column="146" selection-end-line="147" selection-end-column="146" />
               <folding>
                 <element signature="e#35#66#0#PHP" expanded="true" />
-                <marker date="1496811392663" expanded="true" signature="1756:1835" placeholder="SELECT * FRO..${TicketRotativo::tableName()}..." />
-                <marker date="1496811392663" expanded="true" signature="1756:1875" placeholder="SELECT * FRO..${TicketRotativo::tableName()}..." />
-                <marker date="1496811392663" expanded="true" signature="1756:1877" placeholder="SELECT * FRO..${TicketRotativo::tableName()}..." />
-                <marker date="1496811392663" expanded="true" signature="1770:1835" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
-                <marker date="1496811392663" expanded="true" signature="3432:3630" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
-                <marker date="1496811392663" expanded="true" signature="4199:4317" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
-                <marker date="1496811392663" expanded="true" signature="4199:4339" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="saida.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/views/controle/saida.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.384615">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding>
-                <element signature="e#37#67#0#PHP" expanded="true" />
+                <marker date="1496888160269" expanded="true" signature="1756:1835" placeholder="SELECT * FRO..${TicketRotativo::tableName()}..." />
+                <marker date="1496888160269" expanded="true" signature="1756:1875" placeholder="SELECT * FRO..${TicketRotativo::tableName()}..." />
+                <marker date="1496888160269" expanded="true" signature="1756:1877" placeholder="SELECT * FRO..${TicketRotativo::tableName()}..." />
+                <marker date="1496888160269" expanded="true" signature="1770:1835" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
+                <marker date="1496888160269" expanded="true" signature="3432:3630" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
+                <marker date="1496888160269" expanded="true" signature="4199:4316" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
+                <marker date="1496888160269" expanded="true" signature="4199:4338" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
               </folding>
             </state>
           </provider>
@@ -104,13 +104,15 @@
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/index.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/common/config/main.php" />
-        <option value="$PROJECT_DIR$/v1/estacionamento/application/common/config/main-local.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Funcionario.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/controle/entrada.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/common/components/Database.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/controle/saida.php" />
-        <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/TicketRotativo.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/ControleController.php" />
+        <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/TicketRotativo.php" />
+        <option value="$PROJECT_DIR$/v1/estacionamento/application/common/config/main-local.php" />
+        <option value="$PROJECT_DIR$/v1/estacionamento/css/default.css" />
+        <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/controle/index.php" />
       </list>
     </option>
   </component>
@@ -151,6 +153,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -394,13 +397,69 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="estacionamentobd1-uerj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="estacionamentobd1-uerj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="estacionamento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="estacionamentobd1-uerj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="estacionamentobd1-uerj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="estacionamento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -418,6 +477,11 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -441,21 +505,21 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -468,11 +532,53 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/v1/estacionamento/robots.txt">
+    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="30" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/ControleController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/models/TicketRotativo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="184" column="5" selection-start-line="184" selection-start-column="5" selection-end-line="184" selection-end-column="5" />
+          <folding>
+            <element signature="e#35#66#0#PHP" expanded="true" />
+            <marker date="1496888160269" expanded="true" signature="1756:1835" placeholder="SELECT * FRO..${TicketRotativo::tableName()}..." />
+            <marker date="1496888160269" expanded="true" signature="1756:1875" placeholder="SELECT * FRO..${TicketRotativo::tableName()}..." />
+            <marker date="1496888160269" expanded="true" signature="1756:1877" placeholder="SELECT * FRO..${TicketRotativo::tableName()}..." />
+            <marker date="1496888160269" expanded="true" signature="1770:1835" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
+            <marker date="1496888160269" expanded="true" signature="3432:3630" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
+            <marker date="1496888160269" expanded="true" signature="4199:4316" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
+            <marker date="1496888160269" expanded="true" signature="4199:4338" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/views/controle/saida.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#37#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1/estacionamento/robots.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -480,7 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -488,23 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/common/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/common/config/main-local.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -512,7 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35172415">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -538,17 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/views/controle/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -556,7 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0034482758">
           <caret line="64" column="6" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -564,7 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -588,7 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -624,9 +697,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/common/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1367816">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.01954023">
+          <caret line="65" column="30" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/views/controle/saida.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
+        <state vertical-scroll-proportion="0.42988506">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="e#37#67#0#PHP" expanded="true" />
@@ -634,36 +723,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/ControleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-32.153847">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/models/TicketRotativo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.038462">
-          <caret line="184" column="5" selection-start-line="184" selection-start-column="5" selection-end-line="184" selection-end-column="5" />
+        <state vertical-scroll-proportion="-33.384617">
+          <caret line="147" column="146" selection-start-line="147" selection-start-column="146" selection-end-line="147" selection-end-column="146" />
           <folding>
             <element signature="e#35#66#0#PHP" expanded="true" />
-            <marker date="1496811392663" expanded="true" signature="1756:1835" placeholder="SELECT * FRO..${TicketRotativo::tableName()}..." />
-            <marker date="1496811392663" expanded="true" signature="1756:1875" placeholder="SELECT * FRO..${TicketRotativo::tableName()}..." />
-            <marker date="1496811392663" expanded="true" signature="1756:1877" placeholder="SELECT * FRO..${TicketRotativo::tableName()}..." />
-            <marker date="1496811392663" expanded="true" signature="1770:1835" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
-            <marker date="1496811392663" expanded="true" signature="3432:3630" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
-            <marker date="1496811392663" expanded="true" signature="4199:4317" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
-            <marker date="1496811392663" expanded="true" signature="4199:4339" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
+            <marker date="1496888160269" expanded="true" signature="1756:1835" placeholder="SELECT * FRO..${TicketRotativo::tableName()}..." />
+            <marker date="1496888160269" expanded="true" signature="1756:1875" placeholder="SELECT * FRO..${TicketRotativo::tableName()}..." />
+            <marker date="1496888160269" expanded="true" signature="1756:1877" placeholder="SELECT * FRO..${TicketRotativo::tableName()}..." />
+            <marker date="1496888160269" expanded="true" signature="1770:1835" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
+            <marker date="1496888160269" expanded="true" signature="3432:3630" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
+            <marker date="1496888160269" expanded="true" signature="4199:4316" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
+            <marker date="1496888160269" expanded="true" signature="4199:4338" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/SiteController.php">
+    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/common/config/main-local.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537">
-          <caret line="65" column="30" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="30" />
+        <state vertical-scroll-proportion="-11.769231">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/ControleController.php">
+    <entry file="file://$PROJECT_DIR$/v1/estacionamento/css/default.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50595236">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state vertical-scroll-proportion="-2.6153846">
+          <caret line="171" column="0" selection-start-line="171" selection-start-column="2" selection-end-line="229" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/views/controle/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25325885">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1496889014361" expanded="false" signature="512:528" placeholder="..." />
+            <marker date="1496889014361" expanded="true" signature="529:550" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
