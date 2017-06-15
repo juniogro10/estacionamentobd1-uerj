@@ -18,7 +18,10 @@ class MensalController extends \yii\web\Controller
 
         $model_pessoa = Pessoa::findall();
 
-        $model_pessoa = ArrayHelper::map($model_pessoa, 'cpf', 'cpf');
+
+        if($model_pessoa)
+            $model_pessoa = ArrayHelper::map($model_pessoa, 'cpf', 'cpf');
+        
 
         if ($model->load(\Yii::$app->request->post())) {
 //            Carregando load
