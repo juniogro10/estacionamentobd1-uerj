@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="685c4497-81df-46ed-9f08-a13d09ddb90d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/common/config/params.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/common/config/params.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Cliente.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Cliente.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/controle/saida.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/controle/saida.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente/cadastrar.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente/cadastrar.php" />
     </list>
     <ignored path="estacionamentobd1-uerj.iws" />
@@ -162,27 +159,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cliente.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Cliente.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Cliente.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3912543">
+            <state vertical-scroll-proportion="-13.076923">
               <caret line="233" column="177" selection-start-line="233" selection-start-column="177" selection-end-line="233" selection-end-column="177" />
               <folding>
                 <element signature="e#35#66#0#PHP" expanded="true" />
-                <marker date="1497555814247" expanded="true" signature="2114:2190" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-                <marker date="1497555814247" expanded="true" signature="2878:2933" placeholder="SELECT * FRO..${Cliente::tableName()}C..." />
-                <marker date="1497555814247" expanded="true" signature="2878:3022" placeholder="SELECT * FRO..${Cliente::tableName()}C..." />
-                <marker date="1497555814247" expanded="true" signature="4627:4734" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-                <marker date="1497555814247" expanded="true" signature="4760:4803" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-                <marker date="1497555814247" expanded="true" signature="4760:4949" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-                <marker date="1497555814247" expanded="true" signature="5470:5655" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-                <marker date="1497555814247" expanded="true" signature="6036:6197" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-                <marker date="1497555814247" expanded="true" signature="6036:6199" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-                <marker date="1497555814247" expanded="true" signature="6036:6200" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-                <marker date="1497555814247" expanded="true" signature="6134:6197" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-                <marker date="1497555814247" expanded="true" signature="7603:7653" placeholder="/** // * @re..." />
-                <marker date="1497555814247" expanded="true" signature="7796:7846" placeholder="/** // * @re..." />
-                <marker date="1497555814247" expanded="true" signature="8015:8065" placeholder="/** // * @re..." />
+                <marker date="1497555861487" expanded="true" signature="2114:2190" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+                <marker date="1497555861487" expanded="true" signature="2878:2933" placeholder="SELECT * FRO..${Cliente::tableName()}C..." />
+                <marker date="1497555861487" expanded="true" signature="2878:3022" placeholder="SELECT * FRO..${Cliente::tableName()}C..." />
+                <marker date="1497555861487" expanded="true" signature="4627:4734" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+                <marker date="1497555861487" expanded="true" signature="4760:4803" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+                <marker date="1497555861487" expanded="true" signature="4760:4949" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+                <marker date="1497555861487" expanded="true" signature="5470:5655" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+                <marker date="1497555861487" expanded="true" signature="6036:6197" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+                <marker date="1497555861487" expanded="true" signature="6036:6199" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+                <marker date="1497555861487" expanded="true" signature="6036:6200" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+                <marker date="1497555861487" expanded="true" signature="6134:6197" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+                <marker date="1497555861487" expanded="true" signature="7603:7653" placeholder="/** // * @re..." />
+                <marker date="1497555861487" expanded="true" signature="7796:7846" placeholder="/** // * @re..." />
+                <marker date="1497555861487" expanded="true" signature="8015:8065" placeholder="/** // * @re..." />
               </folding>
             </state>
           </provider>
@@ -198,12 +195,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cadastrar.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cadastrar.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente/cadastrar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5">
-              <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-              <folding />
+            <state vertical-scroll-proportion="0.29344073">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#36#66#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -245,11 +244,11 @@
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente/_cadastrar.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/MensalController.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/ClienteInfo.php" />
-        <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente/cadastrar.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/controle/saida.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/common/config/params.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Cliente.php" />
+        <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente/cadastrar.php" />
       </list>
     </option>
   </component>
@@ -777,7 +776,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17963752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17963752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26332623" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1127,14 +1126,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente/cadastrar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente/lista.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.769231">
@@ -1198,24 +1189,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Cliente.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3912543">
+        <state vertical-scroll-proportion="-13.076923">
           <caret line="233" column="177" selection-start-line="233" selection-start-column="177" selection-end-line="233" selection-end-column="177" />
           <folding>
             <element signature="e#35#66#0#PHP" expanded="true" />
-            <marker date="1497555814247" expanded="true" signature="2114:2190" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-            <marker date="1497555814247" expanded="true" signature="2878:2933" placeholder="SELECT * FRO..${Cliente::tableName()}C..." />
-            <marker date="1497555814247" expanded="true" signature="2878:3022" placeholder="SELECT * FRO..${Cliente::tableName()}C..." />
-            <marker date="1497555814247" expanded="true" signature="4627:4734" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-            <marker date="1497555814247" expanded="true" signature="4760:4803" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-            <marker date="1497555814247" expanded="true" signature="4760:4949" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-            <marker date="1497555814247" expanded="true" signature="5470:5655" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-            <marker date="1497555814247" expanded="true" signature="6036:6197" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-            <marker date="1497555814247" expanded="true" signature="6036:6199" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-            <marker date="1497555814247" expanded="true" signature="6036:6200" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-            <marker date="1497555814247" expanded="true" signature="6134:6197" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-            <marker date="1497555814247" expanded="true" signature="7603:7653" placeholder="/** // * @re..." />
-            <marker date="1497555814247" expanded="true" signature="7796:7846" placeholder="/** // * @re..." />
-            <marker date="1497555814247" expanded="true" signature="8015:8065" placeholder="/** // * @re..." />
+            <marker date="1497555861487" expanded="true" signature="2114:2190" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+            <marker date="1497555861487" expanded="true" signature="2878:2933" placeholder="SELECT * FRO..${Cliente::tableName()}C..." />
+            <marker date="1497555861487" expanded="true" signature="2878:3022" placeholder="SELECT * FRO..${Cliente::tableName()}C..." />
+            <marker date="1497555861487" expanded="true" signature="4627:4734" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+            <marker date="1497555861487" expanded="true" signature="4760:4803" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+            <marker date="1497555861487" expanded="true" signature="4760:4949" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+            <marker date="1497555861487" expanded="true" signature="5470:5655" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+            <marker date="1497555861487" expanded="true" signature="6036:6197" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+            <marker date="1497555861487" expanded="true" signature="6036:6199" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+            <marker date="1497555861487" expanded="true" signature="6036:6200" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+            <marker date="1497555861487" expanded="true" signature="6134:6197" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+            <marker date="1497555861487" expanded="true" signature="7603:7653" placeholder="/** // * @re..." />
+            <marker date="1497555861487" expanded="true" signature="7796:7846" placeholder="/** // * @re..." />
+            <marker date="1497555861487" expanded="true" signature="8015:8065" placeholder="/** // * @re..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente/cadastrar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29344073">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#36#66#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

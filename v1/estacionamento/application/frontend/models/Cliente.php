@@ -145,7 +145,7 @@ class Cliente extends Model
     {
 
         try {
-            $query = "SELECT * FROM " . Cliente::tableName() . " C inner join " . Pessoa::tableName() . " p on p.cpf = c.cpf_cliente WHERE cpf_cliente ='" . $cpf . "';";
+            $query = "SELECT * FROM " . Cliente::tableName() . " c inner join " . Pessoa::tableName() . " p on p.cpf = c.cpf_cliente WHERE cpf_cliente ='" . $cpf . "';";
 
             $query_result = Database::query_all($query);
 
