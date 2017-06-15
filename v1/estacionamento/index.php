@@ -1,4 +1,7 @@
 <?php
+// Define o TimeZone para o do Brasil.
+date_default_timezone_set("Brazil/East");
+
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_ENV') or define('YII_ENV', 'prod');
 
