@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="685c4497-81df-46ed-9f08-a13d09ddb90d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente/__cadastrar.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Pessoa.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Pessoa.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/MensalController.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/MensalController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Cliente.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Cliente.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/ClienteInfo.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/ClienteInfo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/layouts/_menu.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/layouts/_menu.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente/cadastrar.php" afterPath="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente/cadastrar.php" />
     </list>
     <ignored path="estacionamentobd1-uerj.iws" />
@@ -88,8 +92,8 @@
       <file leaf-file-name="MensalController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/MensalController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.5636363">
-              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+            <state vertical-scroll-proportion="-4.576923">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -97,56 +101,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pessoa.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Pessoa.php">
+      <file leaf-file-name="ClienteInfo.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/models/ClienteInfo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5385501">
-              <caret line="145" column="29" selection-start-line="145" selection-start-column="29" selection-end-line="145" selection-end-column="29" />
-              <folding>
-                <element signature="e#35#66#0#PHP" expanded="true" />
-                <element signature="e#691#762#0#PHP" expanded="false" />
-                <marker date="1497544882635" expanded="true" signature="1673:1740" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-                <marker date="1497544882635" expanded="true" signature="3385:3399" placeholder="SELECT * FRO..${Pessoa::tableName()}..." />
-                <marker date="1497544882635" expanded="true" signature="3385:3440" placeholder="SELECT * FRO..${Pessoa::tableName()}..." />
-                <marker date="1497544882635" expanded="true" signature="3385:3452" placeholder="SELECT * FRO..${Pessoa::tableName()}..." />
-                <marker date="1497544882635" expanded="true" signature="3833:3978" placeholder="SELECT * FRO..${Pessoa::tableName()}..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cadastrar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente/cadastrar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.538462">
-              <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-              <folding>
-                <element signature="e#36#66#0#PHP" expanded="true" />
-                <marker date="1497544882656" expanded="true" signature="1377:1413" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControleController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/ControleController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.346153">
-              <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
+            <state vertical-scroll-proportion="-2.1127734">
+              <caret line="30" column="92" selection-start-line="30" selection-start-column="92" selection-end-line="30" selection-end-column="92" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TicketRotativo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/models/TicketRotativo.php">
+      <file leaf-file-name="Cliente.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Cliente.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.384615">
-              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.5">
+              <caret line="37" column="2" selection-start-line="37" selection-start-column="2" selection-end-line="49" selection-end-column="5" />
               <folding>
                 <element signature="e#35#66#0#PHP" expanded="true" />
-                <marker date="1497504955736" expanded="true" signature="1790:1909" placeholder="SELECT * FRO..${TicketRotativo::tableName()}..." />
-                <marker date="1497504955736" expanded="true" signature="3074:3213" placeholder="INSERT INTO ${TicketRotativo::tableName()}..." />
+                <marker date="1497552375714" expanded="true" signature="2114:2190" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+                <marker date="1497552375714" expanded="true" signature="2878:2933" placeholder="SELECT * FRO..${Cliente::tableName()}C..." />
+                <marker date="1497552375714" expanded="true" signature="2878:3022" placeholder="SELECT * FRO..${Cliente::tableName()}C..." />
+                <marker date="1497552375714" expanded="true" signature="4627:4734" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+                <marker date="1497552375714" expanded="true" signature="4760:4803" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+                <marker date="1497552375714" expanded="true" signature="4760:4949" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+                <marker date="1497552375714" expanded="true" signature="5470:5655" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+                <marker date="1497552375714" expanded="true" signature="6036:6184" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+                <marker date="1497552375714" expanded="true" signature="6134:6184" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+                <marker date="1497552375714" expanded="true" signature="7588:7638" placeholder="/** // * @re..." />
+                <marker date="1497552375714" expanded="true" signature="7781:7831" placeholder="/** // * @re..." />
+                <marker date="1497552375714" expanded="true" signature="8000:8050" placeholder="/** // * @re..." />
               </folding>
             </state>
           </provider>
@@ -178,19 +161,21 @@
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Funcionario.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/common/models/User.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/common/models/LoginForm.php" />
-        <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/ClienteInfo.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/common/components/Database.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/_Cliente.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente/buscar.php" />
-        <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Cliente.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente/lista.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/index.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/TicketRotativo.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/ControleController.php" />
-        <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/MensalController.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente/cadastrar.php" />
         <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Pessoa.php" />
+        <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/layouts/_menu.php" />
+        <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente/_cadastrar.php" />
+        <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Cliente.php" />
+        <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/MensalController.php" />
+        <option value="$PROJECT_DIR$/v1/estacionamento/application/frontend/models/ClienteInfo.php" />
       </list>
     </option>
   </component>
@@ -442,6 +427,40 @@
               <option name="myItemId" value="frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="estacionamentobd1-uerj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="estacionamentobd1-uerj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="estacionamento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -650,10 +669,10 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26066098" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17963752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12846482" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26332623" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -868,13 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/views/layouts/_menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.923077">
@@ -933,16 +945,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/models/ClienteInfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.264672">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding>
-            <element signature="e#35#66#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48906788">
@@ -967,27 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Cliente.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2347525">
-          <caret line="212" column="43" selection-start-line="212" selection-start-column="43" selection-end-line="212" selection-end-column="43" />
-          <folding>
-            <element signature="e#35#66#0#PHP" expanded="true" />
-            <marker date="1497504599007" expanded="true" signature="2114:2190" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-            <marker date="1497504599007" expanded="true" signature="2878:2933" placeholder="SELECT * FRO..${Cliente::tableName()}C..." />
-            <marker date="1497504599007" expanded="true" signature="2878:3022" placeholder="SELECT * FRO..${Cliente::tableName()}C..." />
-            <marker date="1497504599007" expanded="true" signature="4627:4734" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-            <marker date="1497504599007" expanded="true" signature="4760:4949" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-            <marker date="1497504599007" expanded="true" signature="5343:5444" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-            <marker date="1497504599007" expanded="true" signature="5470:5655" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-            <marker date="1497504599007" expanded="true" signature="6036:6184" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
-            <marker date="1497504599007" expanded="true" signature="7582:7632" placeholder="/** // * @re..." />
-            <marker date="1497504599007" expanded="true" signature="7775:7825" placeholder="/** // * @re..." />
-            <marker date="1497504599007" expanded="true" signature="7994:8044" placeholder="/** // * @re..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2347526">
@@ -1009,7 +990,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/models/TicketRotativo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.384615">
+        <state vertical-scroll-proportion="0.4602992">
           <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
             <element signature="e#35#66#0#PHP" expanded="true" />
@@ -1021,16 +1002,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/ControleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.346153">
+        <state vertical-scroll-proportion="0.48906788">
           <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente/cadastrar.php">
+    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/views/layouts/_menu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.538462">
-          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.6869965">
+          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente/__cadastrar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
           <folding>
             <element signature="e#36#66#0#PHP" expanded="true" />
             <marker date="1497544882656" expanded="true" signature="1377:1413" placeholder="..." />
@@ -1038,20 +1027,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/MensalController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5636363">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Pessoa.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5385501">
-          <caret line="145" column="29" selection-start-line="145" selection-start-column="29" selection-end-line="145" selection-end-column="29" />
+        <state vertical-scroll-proportion="-11.115385">
+          <caret line="297" column="20" selection-start-line="297" selection-start-column="20" selection-end-line="297" selection-end-column="20" />
           <folding>
             <element signature="e#35#66#0#PHP" expanded="true" />
             <element signature="e#691#762#0#PHP" expanded="false" />
@@ -1061,6 +1040,56 @@
             <marker date="1497544882635" expanded="true" signature="3385:3452" placeholder="SELECT * FRO..${Pessoa::tableName()}..." />
             <marker date="1497544882635" expanded="true" signature="3833:3978" placeholder="SELECT * FRO..${Pessoa::tableName()}..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/views/mensal/cliente/cadastrar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58688146">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <folding>
+            <element signature="e#36#66#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/controllers/MensalController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/models/Cliente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5">
+          <caret line="37" column="2" selection-start-line="37" selection-start-column="2" selection-end-line="49" selection-end-column="5" />
+          <folding>
+            <element signature="e#35#66#0#PHP" expanded="true" />
+            <marker date="1497552375714" expanded="true" signature="2114:2190" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+            <marker date="1497552375714" expanded="true" signature="2878:2933" placeholder="SELECT * FRO..${Cliente::tableName()}C..." />
+            <marker date="1497552375714" expanded="true" signature="2878:3022" placeholder="SELECT * FRO..${Cliente::tableName()}C..." />
+            <marker date="1497552375714" expanded="true" signature="4627:4734" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+            <marker date="1497552375714" expanded="true" signature="4760:4803" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+            <marker date="1497552375714" expanded="true" signature="4760:4949" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+            <marker date="1497552375714" expanded="true" signature="5470:5655" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+            <marker date="1497552375714" expanded="true" signature="6036:6184" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+            <marker date="1497552375714" expanded="true" signature="6134:6184" placeholder="SELECT * FRO..${Cliente::tableName()}..." />
+            <marker date="1497552375714" expanded="true" signature="7588:7638" placeholder="/** // * @re..." />
+            <marker date="1497552375714" expanded="true" signature="7781:7831" placeholder="/** // * @re..." />
+            <marker date="1497552375714" expanded="true" signature="8000:8050" placeholder="/** // * @re..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1/estacionamento/application/frontend/models/ClienteInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1127734">
+          <caret line="30" column="92" selection-start-line="30" selection-start-column="92" selection-end-line="30" selection-end-column="92" />
+          <folding />
         </state>
       </provider>
     </entry>

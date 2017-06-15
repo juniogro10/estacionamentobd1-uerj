@@ -52,7 +52,7 @@ use yii\bootstrap\NavBar;
 //    } else {
 //        $menuItems[] = ['label' => 'Minha Conta', 'items' => [['label' => 'Minhas Informações', 'url' => '#'], ['label' => 'Pagamento', 'url' => 'site/pagamento']]];
         $menuItems[] = [
-            'label' => 'Sair (dsa)',
+            'label' => 'Sair ',
             'url' => ['/site/logout'],
             'linkOptions' => ['data-method' => 'post']];
 //    }

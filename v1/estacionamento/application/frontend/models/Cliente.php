@@ -256,9 +256,9 @@ class Cliente extends Model
             $query_result = Database::query_execute($query);
 
             try {
-                $model_pessoa = Pessoa::findpessoa($this->getCpfCliente());
-                $model_pessoa->setAtivo(Cliente::ATIVO);
-                $model_pessoa->atualizar();
+//                $model_pessoa = Pessoa::findpessoa($this->getCpfCliente());
+//                $model_pessoa->setAtivo(Cliente::ATIVO);
+//                $model_pessoa->atualizar();
                 Yii::$app->session->setFlash('success', 'Cadastro realizado com sucesso');
             } catch (Exception $e) {
 

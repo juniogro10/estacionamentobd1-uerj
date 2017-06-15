@@ -3,6 +3,7 @@
 namespace frontend\controllers;
 
 use frontend\models\Cliente;
+use frontend\models\ClienteInfo;
 use frontend\models\Pessoa;
 use Yii;
 use yii\base\DynamicModel;
@@ -11,7 +12,7 @@ use yii\helpers\ArrayHelper;
 
 class MensalController extends \yii\web\Controller
 {
-    public function actionCadastrar()
+    public function actionCadastrarb()
     {
 
         $model = new Cliente();
@@ -21,7 +22,7 @@ class MensalController extends \yii\web\Controller
 
         if($model_pessoa)
             $model_pessoa = ArrayHelper::map($model_pessoa, 'cpf', 'cpf');
-        
+
 
         if ($model->load(\Yii::$app->request->post())) {
 //            Carregando load
@@ -36,8 +37,41 @@ class MensalController extends \yii\web\Controller
             }
             exit();
         }
-        return $this->render('cliente/cadastrar', ['model' => $model, 'model_pessoa' => $model_pessoa]);
+        return $this->render('cliente/__cadastrar', ['model' => $model, 'model_pessoa' => $model_pessoa]);
     }
+
+    public function actionCadastrar()
+    {
+
+        $model = new ClienteInfo();
+
+        if (\Yii::$app->request->post()) {
+
+            $post = \Yii::$app->request->post()['ClienteInfo'];
+
+            $model->setCpfCliente($post['cpf_cliente']);
+            $model->setCnh($post['cnh']);
+            $model->setEmail($post['email']);
+            $model->setNome($post['nome']);
+            $model->setSexo($post['sexo']);
+            $model->setDataNascimento($post['data_nascimento']);
+            $model->setRg($post['rg']);
+            $model->setTelefone($post['telefone']);
+
+//            Carregando load
+            try {
+                if ($model->cadastrar()) {
+                    return $this->redirect(['mensal/cliente', 'cpf' => $model->getCpfCliente()]);
+                }
+            } catch (\Exception $e) {
+                var_dump($e->getMessage());
+
+            }
+            exit();
+        }
+        return $this->render('cliente/cadastrar', ['model' => $model]);
+    }
+
 
     public function actionIndex()
     {

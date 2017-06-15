@@ -11,7 +11,7 @@ use yii\base\Model;
 class ClienteInfo extends Model
 {
     public $cpf_cliente;
-    public $cpf;
+//    public $cpf;
     public $cnh;
     public $email;
     public $nome;
@@ -21,6 +21,56 @@ class ClienteInfo extends Model
     public $telefone;
     public $tipo;
     public $ativo;
+
+    /**
+     * @inheritdoc
+     */
+    public function rules()
+    {
+        return [
+            [['cpf_cliente', 'email', 'cnh','nome','sexo', 'data_nascimento','rg','telefone'], 'required'],
+        ];
+    }
+
+    public function cadastrar()
+    {
+//        Cadastrar pessoa primeiramente
+        try {
+
+            $model_pessoa = new Pessoa();
+
+            $model_pessoa->setCpf($this->getCpfCliente());
+            $model_pessoa->setNome($this->getNome());
+            $model_pessoa->setSexo($this->getSexo());
+            $model_pessoa->setDataNascimento($this->getDtNascimento_brl());
+            $model_pessoa->setRg($this->getRg());
+            $model_pessoa->setTelefone($this->getTelefone());
+            $model_pessoa->setTipo(0);
+            $model_pessoa->setAtivo(Cliente::ATIVO);
+
+            if ($model_pessoa->cadastrar()) {
+                $model_cliente = new Cliente();
+
+                $model_cliente->setCpfCliente($model_pessoa->getCpf());
+                $model_cliente->setCnh($this->getCnh());
+                $model_cliente->setEmail($this->getEmail());
+
+                if ($model_cliente->cadastrar()) {
+                    return true;
+                }
+                else
+                    return false;
+            }
+            else
+            {
+                return false;
+            }
+        }catch (Exception $e)
+        {
+            var_dump($e->getMessage());
+            exit();
+        }
+    }
 
     /**
      * @return mixed
@@ -231,5 +281,28 @@ class ClienteInfo extends Model
         $this->ativo = $ativo;
     }
 
+    public function getDtNascimento_sql()
+    {
+        return $this->format_date_sql($this->getDataNascimento());
+    }
+
+    public function getDtNascimento_brl()
+    {
+        return $this->format_date_brl($this->getDataNascimento());
+    }
+
+    private function format_date_sql($date)
+    {
+        $timestamp = strtotime($date);
+        $mydate = date('Y-m-d', $timestamp);
+        return $mydate;
+    }
+
+    private function format_date_brl($date)
+    {
+        $timestamp = strtotime($date);
+        $mydate = date('d-m-Y', $timestamp);
+        return $mydate;
+    }
 
 }
