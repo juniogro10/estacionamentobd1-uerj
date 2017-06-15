@@ -28,7 +28,7 @@ class ClienteInfo extends Model
     public function rules()
     {
         return [
-            [['cpf_cliente', 'email', 'cnh','nome','sexo', 'data_nascimento','rg','telefone'], 'required'],
+            [['cpf_cliente', 'email', 'cnh', 'nome', 'sexo', 'data_nascimento', 'rg', 'telefone'], 'required'],
         ];
     }
 
@@ -57,18 +57,17 @@ class ClienteInfo extends Model
 
                 if ($model_cliente->cadastrar()) {
                     return true;
-                }
-                else
+                } else {
                     return false;
-            }
-            else
-            {
+                }
+            } else {
                 return false;
             }
-        }catch (Exception $e)
-        {
-            var_dump($e->getMessage());
-            exit();
+        } catch (Exception $e) {
+            Yii::$app->session->setFlash('error', 'Tente Novamente');
+            return false;
+//            var_dump($e->getMessage());
+//            exit();
         }
     }
 

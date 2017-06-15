@@ -36,6 +36,7 @@ class Pessoa extends Model
     public $telefone;
     public $tipo;
     public $ativo;
+
     public static function tableName()
     {
         return 'pessoa';
@@ -74,7 +75,7 @@ class Pessoa extends Model
     }
 
 
-    public static function findpessoa ($cpf)
+    public static function findpessoa($cpf)
     {
 
         try {
@@ -114,7 +115,7 @@ class Pessoa extends Model
                 " SET ativo ='" . $this->getAtivo() . "', nome = '" . $this->getNome() .
                 "', rg = '" . $this->getRg() . "', sexo = '" . $this->getSexo() .
                 "', data_nascimento = '" . $this->getDtNascimento_sql() .
-                "', telefone = '" . $this->getTelefone() . "', tipo = '".$this->getTipo() . "'  WHERE cpf ='" . $this->getCpf() . "';";
+                "', telefone = '" . $this->getTelefone() . "', tipo = '" . $this->getTipo() . "'  WHERE cpf ='" . $this->getCpf() . "';";
 
             //Numero de row atualizada
 //            var_dump($query);
@@ -137,7 +138,7 @@ class Pessoa extends Model
     {
         $tipo = 0;
         try {
-            $query = "SELECT * FROM " . Pessoa::tableName() . " where tipo ='". $tipo ."';";
+            $query = "SELECT * FROM " . Pessoa::tableName() . " where tipo ='" . $tipo . "';";
             $query_result = Database::query_all($query);
 
             if ($query_result) {
@@ -150,13 +151,13 @@ class Pessoa extends Model
             throw new \Exception($e);
         }
     }
+
     public static function findall_new($status = 1)
     {
         try {
 
             $query = "SELECT * FROM " . Pessoa::tableName() . " p inner join funcionario f on f.cpf_funcionario != p.cpf inner join cliente c on c.cpf_cliente != p.cpf ;";
-            var_dump($query);
-            exit;
+
             $query_result = Database::query_all($query);
 
             if ($query_result) {
@@ -169,11 +170,12 @@ class Pessoa extends Model
             throw new \Exception($e);
         }
     }
+
     public function cadastrar()
     {
         try {
             $query = "INSERT  " . Pessoa::tableName() . " (cpf,nome,sexo,data_nascimento,rg,telefone,tipo,ativo)
-             VALUES ('" . $this->getCpf() . "','" . $this->getNome() . "','" . $this->getSexo() . "','" . $this->getDtNascimento_sql() . "','" . $this->getRg() . "','" . $this->getTelefone() . "','" . $this->getTipo() ."','". $this->getAtivo(). "')";
+             VALUES ('" . $this->getCpf() . "','" . $this->getNome() . "','" . $this->getSexo() . "','" . $this->getDtNascimento_sql() . "','" . $this->getRg() . "','" . $this->getTelefone() . "','" . $this->getTipo() . "','" . $this->getAtivo() . "')";
 
             $query_result = Database::query_execute($query);
 
@@ -184,7 +186,8 @@ class Pessoa extends Model
             Yii::$app->session->setFlash('warning', 'Tente Novamente');
             throw new \Exception('query_result retornando errado');
         } catch (Exception $e) {
-            throw new \Exception($e);
+            Yii::$app->session->setFlash('warning', 'Não foi possível cadastrar a pessoa.');
+            return false;
         }
     }
 

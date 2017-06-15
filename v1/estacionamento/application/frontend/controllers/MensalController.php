@@ -64,10 +64,8 @@ class MensalController extends \yii\web\Controller
                     return $this->redirect(['mensal/cliente', 'cpf' => $model->getCpfCliente()]);
                 }
             } catch (\Exception $e) {
-                var_dump($e->getMessage());
 
             }
-            exit();
         }
         return $this->render('cliente/cadastrar', ['model' => $model]);
     }

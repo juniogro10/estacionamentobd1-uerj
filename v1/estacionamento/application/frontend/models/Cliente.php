@@ -253,17 +253,15 @@ class Cliente extends Model
              VALUES ('" . $this->getCpfCliente() . "','" . $this->getEmail() . "','" . $this->getCnh() . "')
               ON DUPLICATE KEY UPDATE email = '" . $this->getEmail() . "'";
 
-            $query_result = Database::query_execute($query);
+
 
             try {
-//                $model_pessoa = Pessoa::findpessoa($this->getCpfCliente());
-//                $model_pessoa->setAtivo(Cliente::ATIVO);
-//                $model_pessoa->atualizar();
-                Yii::$app->session->setFlash('success', 'Cadastro realizado com sucesso');
+                $query_result = Database::query_execute($query);
+                if($query_result)
+                {
+                    Yii::$app->session->setFlash('success', 'Cadastro realizado com sucesso');
+                }
             } catch (Exception $e) {
-
-//                var_dump($e->getMessage());
-//                exit;
                 throw new Exception($e);
             }
             return true;
@@ -272,6 +270,7 @@ class Cliente extends Model
             Yii::$app->session->setFlash('warning', 'Tente Novamente');
 //            throw new \Exception('query_result retornando errado');
 
+            return false;
             throw new \Exception($e);
         }
     }
