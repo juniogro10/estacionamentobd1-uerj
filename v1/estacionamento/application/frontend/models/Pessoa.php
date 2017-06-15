@@ -133,10 +133,11 @@ class Pessoa extends Model
     }
 
 
-    public static function findall($status = 1)
+    public static function findall()
     {
+        $tipo = 0;
         try {
-            $query = "SELECT * FROM " . Pessoa::tableName() . " ;";
+            $query = "SELECT * FROM " . Pessoa::tableName() . " where tipo ='". $tipo ."';";
             $query_result = Database::query_all($query);
 
             if ($query_result) {
