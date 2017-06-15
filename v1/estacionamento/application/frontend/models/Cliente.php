@@ -189,7 +189,7 @@ class Cliente extends Model
 
         try {
 //            $query = "SELECT * FROM " . Cliente::tableName() . " WHERE cpf_cliente like '" . $cpf . "%' ORDER BY cpf_cliente DESC;";
-            $query = "SELECT * FROM " . Cliente::tableName() . " C inner join " . Pessoa::tableName() . " p on p.cpf = c.cpf_cliente
+            $query = "SELECT * FROM " . Cliente::tableName() . " c inner join " . Pessoa::tableName() . " p on p.cpf = c.cpf_cliente
              WHERE cpf_cliente like '" . $cpf . "%'  ORDER BY cpf_cliente DESC ;";
 
             $query_result = Database::query_all($query);
