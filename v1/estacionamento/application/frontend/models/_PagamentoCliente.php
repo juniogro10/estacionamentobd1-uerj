@@ -9,10 +9,8 @@ use Yii;
  *
  * @property integer $id_pagamento
  * @property integer $cpf_cliente
- * @property double $valor_pago
+ * @property integer $valor_pago
  * @property string $data_hora_pagamento
- *
- * @property Cliente $cpfCliente
  */
 class PagamentoCliente extends \yii\db\ActiveRecord
 {
@@ -31,10 +29,8 @@ class PagamentoCliente extends \yii\db\ActiveRecord
     {
         return [
             [['cpf_cliente', 'valor_pago'], 'required'],
-            [['cpf_cliente'], 'integer'],
-            [['valor_pago'], 'number'],
+            [['cpf_cliente', 'valor_pago'], 'integer'],
             [['data_hora_pagamento'], 'safe'],
-            [['cpf_cliente'], 'exist', 'skipOnError' => true, 'targetClass' => Cliente::className(), 'targetAttribute' => ['cpf_cliente' => 'cpf_cliente']],
         ];
     }
 
@@ -49,13 +45,5 @@ class PagamentoCliente extends \yii\db\ActiveRecord
             'valor_pago' => 'Valor Pago',
             'data_hora_pagamento' => 'Data Hora Pagamento',
         ];
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getCpfCliente()
-    {
-        return $this->hasOne(Cliente::className(), ['cpf_cliente' => 'cpf_cliente']);
     }
 }

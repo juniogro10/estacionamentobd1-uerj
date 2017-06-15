@@ -41,8 +41,13 @@ class User extends ActiveRecord implements IdentityInterface
 
         $query_result = \common\components\Database::query_all($query);
 
+//        var_dump($query_result);
+
 
         if (empty($query_result)) {
+//            var_dump($query);
+//            var_dump('vazio');
+//            exit;
             return null;
         }
 
@@ -51,12 +56,18 @@ class User extends ActiveRecord implements IdentityInterface
         try {
             $user->cpf_funcionario = $query_result[0]['cpf_funcionario'];
             $user->senha = $query_result[0]['senha'];
-            $user->nome = $query_result[0]['nome'];
-            $user->rg = $query_result[0]['rg'];
-            $user->sexo = $query_result[0]['sexo'];
-            $user->dt_nascimento = $query_result[0]['dt_nascimento'];
-            $user->telefone = $query_result[0]['telefone'];
-            $user->tipo = $query_result[0]['tipo'];
+//            $user->nome = $query_result[0]['nome'];
+//            $user->rg = $query_result[0]['rg'];
+//            $user->sexo = $query_result[0]['sexo'];
+//            $user->dt_nascimento = $query_result[0]['dt_nascimento'];
+//            $user->telefone = $query_result[0]['telefone'];
+//            $user->tipo = $query_result[0]['tipo'];
+//            $user->load(['User' => $query_result[0]]);
+//            var_dump($query_result);
+//            exit;
+
+//            var_dump($user);
+//            exit;
             return $user;
         } catch (Exception $e) {
             var_dump($e->getMessage());

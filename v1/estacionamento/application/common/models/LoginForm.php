@@ -53,7 +53,6 @@ class LoginForm extends Model
     {
         if (!$this->hasErrors()) {
             $user = $this->getUser();
-
 //          Simples comparação do password , necessario um hash??
             if (!($user) || !($user['senha'] == $this->password)) {
 

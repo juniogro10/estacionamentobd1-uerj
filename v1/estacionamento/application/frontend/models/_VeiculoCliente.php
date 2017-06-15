@@ -5,23 +5,23 @@ namespace frontend\models;
 use Yii;
 
 /**
- * This is the model class for table "pagamento_cliente".
+ * This is the model class for table "veiculo_cliente".
  *
- * @property integer $id_pagamento
+ * @property integer $id_veiculo_cliente
  * @property integer $cpf_cliente
- * @property double $valor_pago
- * @property string $data_hora_pagamento
+ * @property string $placa
+ * @property string $modelo
  *
  * @property Cliente $cpfCliente
  */
-class PagamentoCliente extends \yii\db\ActiveRecord
+class VeiculoCliente extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return 'pagamento_cliente';
+        return 'veiculo_cliente';
     }
 
     /**
@@ -30,10 +30,9 @@ class PagamentoCliente extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['cpf_cliente', 'valor_pago'], 'required'],
-            [['cpf_cliente'], 'integer'],
-            [['valor_pago'], 'number'],
-            [['data_hora_pagamento'], 'safe'],
+            [['id_veiculo_cliente', 'cpf_cliente', 'placa', 'modelo'], 'required'],
+            [['id_veiculo_cliente', 'cpf_cliente'], 'integer'],
+            [['placa', 'modelo'], 'string'],
             [['cpf_cliente'], 'exist', 'skipOnError' => true, 'targetClass' => Cliente::className(), 'targetAttribute' => ['cpf_cliente' => 'cpf_cliente']],
         ];
     }
@@ -44,10 +43,10 @@ class PagamentoCliente extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id_pagamento' => 'Id Pagamento',
+            'id_veiculo_cliente' => 'Id Veiculo Cliente',
             'cpf_cliente' => 'Cpf Cliente',
-            'valor_pago' => 'Valor Pago',
-            'data_hora_pagamento' => 'Data Hora Pagamento',
+            'placa' => 'Placa',
+            'modelo' => 'Modelo',
         ];
     }
 

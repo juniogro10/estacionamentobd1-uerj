@@ -33,7 +33,7 @@ use yii\widgets\DetailView;
         [
             'class' => 'yii\grid\ActionColumn',
             'header'=>'Ações',
-            'template' => '{view}{delete} {adicionar_veiculo}',
+            'template' => '{view}{delete} {listar_veiculo}{adicionar_veiculo}',
             'buttons' => [
 
                 //view button
@@ -42,6 +42,13 @@ use yii\widgets\DetailView;
                     return Html::a('<span class="glyphicon glyphicon-plus"></span>', $url,
                         [
                             'title' => Yii::t('app', 'Adicionar veículo ao cliente'),
+                        ]);
+                }, //view button
+                'listar_veiculo' => function ($url, $model) {
+
+                    return Html::a('<span class="glyphicon glyphicon-list-alt"></span>', $url,
+                        [
+                            'title' => Yii::t('app', 'Listar veículo ao cliente'),
                         ]);
                 },
             ],
@@ -52,6 +59,8 @@ use yii\widgets\DetailView;
                     return \yii\helpers\Url::to(['mensal/cliente-delete', 'cpf' => $model['cpf_cliente']]);
                 }elseif ($action === 'adicionar_veiculo') {
                     return \yii\helpers\Url::to(['mensal/adicionar-veiculo', 'cpf' => $model['cpf_cliente']]);
+                }elseif ($action === 'listar_veiculo') {
+                    return \yii\helpers\Url::to(['mensal/listar-veiculo', 'cpf' => $model['cpf_cliente']]);
                 }
             },
 

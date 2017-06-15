@@ -3,22 +3,19 @@
 namespace frontend\models;
 
 use Yii;
+use yii\base\Model;
 
 /**
  * This is the model class for table "funcionario".
  *
  * @property integer $cpf_funcionario
  * @property string $senha
- * @property string $nome
- * @property integer $rg
- * @property string $sexo
- * @property string $dt_nascimento
- * @property string $telefone
  * @property integer $tipo
  *
+ * @property Pessoa $cpfFuncionario
  * @property TicketRotativo[] $ticketRotativos
  */
-class Funcionario extends \yii\db\ActiveRecord
+class Funcionario extends Model
 {
     /**
      * @inheritdoc
@@ -34,11 +31,10 @@ class Funcionario extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['cpf_funcionario', 'senha', 'nome', 'rg', 'sexo', 'dt_nascimento', 'telefone', 'tipo'], 'required'],
-            [['cpf_funcionario', 'rg', 'tipo'], 'integer'],
-            [['senha', 'nome', 'telefone'], 'string'],
-            [['dt_nascimento'], 'safe'],
-            [['sexo'], 'string', 'max' => 10],
+            [['cpf_funcionario', 'senha', 'tipo'], 'required'],
+            [['cpf_funcionario', 'tipo'], 'integer'],
+            [['senha'], 'string'],
+//            [['cpf_funcionario'], 'exist', 'skipOnError' => true, 'targetClass' => Pessoa::className(), 'targetAttribute' => ['cpf_funcionario' => 'cpf']],
         ];
     }
 
@@ -50,20 +46,23 @@ class Funcionario extends \yii\db\ActiveRecord
         return [
             'cpf_funcionario' => 'Cpf Funcionario',
             'senha' => 'Senha',
-            'nome' => 'Nome',
-            'rg' => 'Rg',
-            'sexo' => 'Sexo',
-            'dt_nascimento' => 'Dt Nascimento',
-            'telefone' => 'Telefone',
             'tipo' => 'Tipo',
         ];
     }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getTicketRotativos()
-    {
-        return $this->hasMany(TicketRotativo::className(), ['cpf_funcionario' => 'cpf_funcionario']);
-    }
+//
+//    /**
+//     * @return \yii\db\ActiveQuery
+//     */
+//    public function getCpfFuncionario()
+//    {
+//        return $this->hasOne(Pessoa::className(), ['cpf' => 'cpf_funcionario']);
+//    }
+//
+//    /**
+//     * @return \yii\db\ActiveQuery
+//     */
+//    public function getTicketRotativos()
+//    {
+//        return $this->hasMany(TicketRotativo::className(), ['cpf_funcionario' => 'cpf_funcionario']);
+//    }
 }
