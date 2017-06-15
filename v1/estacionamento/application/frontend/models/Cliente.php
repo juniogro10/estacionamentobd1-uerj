@@ -210,7 +210,7 @@ class Cliente extends Model
 
         try {
 //            $query = "SELECT * FROM " . Cliente::tableName() . " WHERE nome like '" . $nome . "%' ORDER BY cpf_cliente DESC;";
-            $query = "SELECT * FROM " . Cliente::tableName() . " C inner join " . Pessoa::tableName() . " p on p.cpf = c.cpf_cliente
+            $query = "SELECT * FROM " . Cliente::tableName() . " c inner join " . Pessoa::tableName() . " p on p.cpf = c.cpf_cliente
              WHERE p.nome like '" . $nome . "%'  ORDER BY cpf_cliente DESC ;";
 
 
@@ -231,7 +231,7 @@ class Cliente extends Model
     public static function findall($status = 1)
     {
         try {
-            $query = "SELECT * FROM " . Cliente::tableName() . " C INNER JOIN " . Pessoa::tableName() . " P ON P.cpf = C.cpf_cliente " . " WHERE ativo = '" . $status . "';";
+            $query = "SELECT * FROM " . Cliente::tableName() . " c INNER JOIN " . Pessoa::tableName() . " p ON p.cpf = c.cpf_cliente " . " WHERE ativo = '" . $status . "';";
 
             $query_result = Database::query_all($query);
 
