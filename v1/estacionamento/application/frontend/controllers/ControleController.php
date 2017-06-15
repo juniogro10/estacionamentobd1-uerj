@@ -5,6 +5,7 @@ namespace frontend\controllers;
 use common\components\Database;
 use frontend\models\TicketRotativo;
 use Yii;
+use yii\data\ArrayDataProvider;
 use yii\db\Exception;
 use yii\helpers\Url;
 
@@ -102,6 +103,30 @@ class ControleController extends \yii\web\Controller
             Yii::$app->session->setFlash('warning', 'Emplacamento não encontrado');
         }
         return $this->render('saida', ['model' => $model]);
+    }
+
+    public function actionLista()
+    {
+
+//      Procura no banco todos os clientes retornando um array
+        $model = TicketRotativo::findinpark();
+
+//      Criação do provider para uso no grid view
+
+        if ($model) {
+
+            $provider = new ArrayDataProvider([
+                'allModels' => $model,
+                'sort' => [
+                ],
+                'pagination' => [
+                    'pageSize' => 10,
+                ],
+            ]);
+        }
+        else
+            $provider = null;
+        return $this->render('lista', ['dataProvider' => $provider]);
     }
 
 }

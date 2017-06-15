@@ -68,7 +68,25 @@ class TicketRotativo extends Model
         ];
     }
 
+    public static function findinpark()
+    {
 
+        try{
+            $query = "SELECT * FROM " . TicketRotativo::tableName() . " WHERE data_hora_saida IS NULL ORDER BY data_hora_entrada ASC ;";
+
+//            var_dump($query);
+//            exit;
+            $query_result = Database::query_all($query);
+
+            if($query_result)
+                return $query_result;
+            else
+                return false;
+        }catch (Exception $e)
+        {
+            throw new Exception($e);
+        }
+    }
 
     public static function findplaca($placa)
     {

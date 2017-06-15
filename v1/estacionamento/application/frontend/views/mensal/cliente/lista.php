@@ -25,7 +25,7 @@ use yii\widgets\DetailView;
         'nome',
         'telefone',
         [
-            'attribute' => 'ativo',
+            'attribute' => 'Status',
             'value' => function ($model) {
 
                 if($model['ativo'] )
