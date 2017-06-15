@@ -19,6 +19,7 @@ class Database extends Component
     public static function query_all($query)
     {
         $connection = Yii::$app->getDb();
+
         $command = $connection->createCommand($query);
         $result = $command->queryAll();
         return $result;

@@ -10,9 +10,14 @@ use yii\grid\GridView;
 use yii\helpers\Html;
 use yii\widgets\DetailView;
 
+
+//var_dump($dataProvider);
+//exit;
+
 ?>
 
 
+<?if($dataProvider != null) {?>
 <?= GridView::widget([
     'dataProvider' => $dataProvider,
     'columns' => [
@@ -33,7 +38,8 @@ use yii\widgets\DetailView;
         [
             'class' => 'yii\grid\ActionColumn',
             'header'=>'Ações',
-            'template' => '{view}{delete} {listar_veiculo}{adicionar_veiculo}',
+            'template' => '{view}{delete}',
+//            'template' => '{view}{delete} {listar_veiculo}{adicionar_veiculo}',
             'buttons' => [
 
                 //view button
@@ -62,9 +68,14 @@ use yii\widgets\DetailView;
                 }elseif ($action === 'listar_veiculo') {
                     return \yii\helpers\Url::to(['mensal/listar-veiculo', 'cpf' => $model['cpf_cliente']]);
                 }
+                return '';
             },
 
         ]
     ],
 ]); ?>
+
+<?} else {?>
+    Sem cliente
+<?} ?>
 

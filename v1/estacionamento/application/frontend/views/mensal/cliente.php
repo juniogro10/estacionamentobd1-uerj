@@ -28,7 +28,7 @@ use yii\widgets\DetailView;
             },
         ],
         'email',
-        'dt_nascimento',
+        'data_nascimento',
         'telefone',
         [
             'attribute' => 'ativo',

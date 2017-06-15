@@ -3,9 +3,11 @@
 namespace frontend\controllers;
 
 use frontend\models\Cliente;
+use frontend\models\Pessoa;
 use Yii;
 use yii\base\DynamicModel;
 use yii\data\ArrayDataProvider;
+use yii\helpers\ArrayHelper;
 
 class MensalController extends \yii\web\Controller
 {
@@ -13,6 +15,10 @@ class MensalController extends \yii\web\Controller
     {
 
         $model = new Cliente();
+
+        $model_pessoa = Pessoa::findall();
+
+        $model_pessoa = ArrayHelper::map($model_pessoa, 'cpf', 'cpf');
 
         if ($model->load(\Yii::$app->request->post())) {
 //            Carregando load
@@ -27,7 +33,7 @@ class MensalController extends \yii\web\Controller
             }
             exit();
         }
-        return $this->render('/cliente/cadastrar', ['model' => $model]);
+        return $this->render('cliente/cadastrar', ['model' => $model, 'model_pessoa' => $model_pessoa]);
     }
 
     public function actionIndex()
@@ -38,14 +44,9 @@ class MensalController extends \yii\web\Controller
     public function actionCliente($cpf)
     {
 
-        $model = Cliente::findcliente($cpf);
+        $model = Cliente::findcliente_info($cpf);
 
         if ($model) {
-//            if(Yii::$app->request->post())
-//            {
-//                var_dump('Post chegando');
-//            }
-
             return $this->render('cliente', ['model' => $model]);
         }
         Yii::$app->session->setFlash('warning', 'CPF não localizado');
@@ -60,27 +61,37 @@ class MensalController extends \yii\web\Controller
         $model = Cliente::findall();
 
 //      Criação do provider para uso no grid view
-        $provider = new ArrayDataProvider([
-            'allModels' => $model,
-            'sort' => [
-                'attributes' => ['cpf_cliente', 'nome', 'telefone'],
-            ],
-            'pagination' => [
-                'pageSize' => 10,
-            ],
-        ]);
+
+        if ($model) {
+
+            $provider = new ArrayDataProvider([
+                'allModels' => $model,
+                'sort' => [
+//                    'attributes' => ['cpf_cliente', 'nome', 'telefone'],
+                ],
+                'pagination' => [
+                    'pageSize' => 10,
+                ],
+            ]);
+        }
+        else
+            $provider = null;
         return $this->render('cliente/lista', ['dataProvider' => $provider]);
     }
 
     public function actionClienteDelete($cpf)
     {
-        $model = Cliente::findcliente($cpf);
+        $model_cliente = Cliente::findcliente($cpf);
 
-        $model->setAtivo(Cliente::DESATIVADO);
+
+        $model_pessoa = Pessoa::findpessoa($model_cliente->getCpfCliente());
+
+        $model_pessoa->setAtivo(Cliente::DESATIVADO);
+//        $model->setAtivo(Cliente::DESATIVADO);
 
         try {
-            $model->atualizar();
-            return $this->redirect(['mensal/cliente', 'cpf' => $model->getCpfCliente()]);
+            $model_pessoa->atualizar();
+            return $this->redirect(['mensal/cliente', 'cpf' => $model_pessoa->getCpf()]);
         } catch (\Exception $e) {
             var_dump($e->getMessage());
 
@@ -105,14 +116,13 @@ class MensalController extends \yii\web\Controller
 
 //            var_dump(Yii::$app->request->ge)
 
-            if(!empty($post['cpf']))
-            {
+            if (!empty($post['cpf'])) {
                 $model = Cliente::buscartodosclienteporcpf($post['cpf']);
-            }
-            else
-            {
+            } else {
                 $model = Cliente::buscartodosclientepornome($post['nome']);
             }
+
+
 
 //      Encontrou pelo menos 1 elemento
             if ($model) {
@@ -126,7 +136,8 @@ class MensalController extends \yii\web\Controller
                         'pageSize' => 10,
                     ],
                 ]);
-                return $this->render('cliente/buscar',[ 'dataprovider' => $provider, 'model_dynamic' => $model_dynamic]);
+                return $this->render('cliente/buscar',
+                    ['dataprovider' => $provider, 'model_dynamic' => $model_dynamic]);
             }
 
 

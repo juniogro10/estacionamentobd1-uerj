@@ -19,6 +19,17 @@ class ControleController extends \yii\web\Controller
     {
         $model = new TicketRotativo();
         if ($model->load(\Yii::$app->request->post())) {
+
+            $check_plate = TicketRotativo::findplaca($model->getPlaca());
+
+            if($check_plate)
+            {
+                if($check_plate->getDataHoraSaida() == null)
+                {
+                    Yii::$app->session->setFlash('warning', 'Emplacamento já estacionado');
+                    return $this->render('entrada', ['model' => $model]);
+                }
+            }
             try {
                 $model->entrada();
                 return $this->redirect([Url::to('controle/index')]);
@@ -45,7 +56,7 @@ class ControleController extends \yii\web\Controller
 //          Verificação se é valido
             if ($model_check) {
 //              Emplacamento já pago
-                if(!is_null($model_check->valor_pago))
+                if($model_check->valor_pago != '0' )
                 {
                     Yii::$app->session->setFlash('warning', 'Emplacamento já pago');
                     return $this->render('saida', ['model' => $model]);
