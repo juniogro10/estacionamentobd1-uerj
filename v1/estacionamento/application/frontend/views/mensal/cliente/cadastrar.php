@@ -13,7 +13,7 @@ use yii\helpers\Html;
     <?= $form->field($model, 'cnh')->textInput(['type' => 'number']) ?>
     <?= $form->field($model, 'email')->input('email'); ?>
     <?= $form->field($model, 'nome')->textInput()->label('Nome') ?>
-    <?= $form->field($model, 'sexo')->dropDownList(['0' => 'Feminino', '1' => 'Masculino'],
+    <?= $form->field($model, 'sexo')->dropDownList(['F' => 'Feminino', 'M' => 'Masculino'],
         ['prompt' => 'Selecionar o Sexo']); ?>
 
 
