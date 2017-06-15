@@ -130,7 +130,15 @@ class TicketRotativo extends Model
     public function entrada()
     {
         try {
-            $query = "INSERT INTO " . TicketRotativo::tableName() . " (cpf_funcionario,placa) VALUES ('" . \Yii::$app->user->getId() . "','" . $this->placa . "')";
+
+            $now = new DateTime('now');
+
+            $date = $now->format('Y/m/d H:i:s');
+
+            $app = \Yii::$app;
+
+            $query = "INSERT INTO  {TicketRotativo::tableName()} (cpf_funcionario,placa,data_hora_entrada) VALUES ('{$app->user->getId()}','{$this->placa}',STR_TO_DATE('{$date}','%Y/%m/%d %H:%i:%s'))";
+
             $query_result = Database::query_execute($query);
 
             if ($query_result) {
