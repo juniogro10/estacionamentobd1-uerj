@@ -137,7 +137,7 @@ class TicketRotativo extends Model
 
             $app = \Yii::$app;
 
-            $query = "INSERT INTO  {TicketRotativo::tableName()} (cpf_funcionario,placa,data_hora_entrada) VALUES ('{$app->user->getId()}','{$this->placa}',STR_TO_DATE('{$date}','%Y/%m/%d %H:%i:%s'))";
+            $query = "INSERT INTO {TicketRotativo::tableName()} (cpf_funcionario,placa,data_hora_entrada) VALUES ('{$app->user->getId()}','{$this->placa}',STR_TO_DATE('{$date}','%Y/%m/%d %H:%i:%s'))";
 
             $query_result = Database::query_execute($query);
 
@@ -146,7 +146,7 @@ class TicketRotativo extends Model
                 return;
             }
             Yii::$app->session->setFlash('warning', 'Tente Novamente');
-            throw new \Exception('query_result retornando errado');
+            throw new \Exception($query);
         } catch (Exception $e) {
             throw new \Exception($e);
         }
