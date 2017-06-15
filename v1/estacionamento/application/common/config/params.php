@@ -10,7 +10,7 @@ return [
 
 
 //  Default variable for enterprise
-    'nome_companhia' => 'BlueBi',
+    'nome_companhia' => 'Estacionamento - Uerj',
 
 //  Default flash mensage
     'ativacao_do_email_an' => 'Necessário ativação da conta através do email',

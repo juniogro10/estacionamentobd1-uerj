@@ -20,7 +20,7 @@ use yii\widgets\DetailView;
             'attribute' => 'sexo',
             'value' => function ($model) {
 
-                if($model->sexo )
+                if($model->sexo == 'm' )
                 {
                     return 'Masculino';
                 }

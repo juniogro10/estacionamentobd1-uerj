@@ -6,7 +6,7 @@ use yii\helpers\Html;
 
 ?>
 
-
+<h1>controle/saida</h1>
 
 <div>
     <?php $form = ActiveForm::begin(['id' => 'form_saida']); ?>

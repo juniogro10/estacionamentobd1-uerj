@@ -231,7 +231,7 @@ class Cliente extends Model
     public static function findall($status = 1)
     {
         try {
-            $query = "SELECT * FROM " . Cliente::tableName() . " c INNER JOIN " . Pessoa::tableName() . " p ON p.cpf = c.cpf_cliente " . " WHERE ativo = '" . $status . "';";
+            $query = "SELECT * FROM " . Cliente::tableName() . " c INNER JOIN " . Pessoa::tableName() . " p ON p.cpf = c.cpf_cliente " . " WHERE ativo = '" . $status . "' and tipo = '0';";
 
             $query_result = Database::query_all($query);
 
